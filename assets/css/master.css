@@ -360,6 +360,9 @@ ul.navbar-nav:first-of-type > li{
         font-size: 1.875em;
         line-height: 39px;
     }
+    .txt-links{
+        font-size: .8em;
+    }
     .nav-item .btn-primary{
         padding: 10px;
     }
