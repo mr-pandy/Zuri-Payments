@@ -70,6 +70,8 @@ section > p{
 }
 /* header styles */
 .btn-primary{
+    display: table;
+    vertical-align: middle;
     padding: 14px 20px;
     background-color: var(--primary);
     outline: none;
@@ -140,7 +142,9 @@ ul.navbar-nav:first-of-type > li{
     line-height: 25px;
 }
 .hero-buttons .btn-clear{
-    padding: 18px 24px;
+    display: table;
+    vertical-align: middle;
+    padding: 11px 20px;
     border: 2px solid #fff;
     color: #fff;
 }
@@ -149,9 +153,6 @@ ul.navbar-nav:first-of-type > li{
     --ainmate-delay:.5s;
 }
 /* offer section styles  */
-#offers .offer-item{
-    flex-basis: 25%;
-}
 .offer-item h4, #operations h4{
     color: #1e1e1e;
     font-weight: 600;
@@ -256,4 +257,173 @@ ul.navbar-nav:first-of-type > li{
 }
 .light a, .bottom-footer p{
     color: #828282;
+}
+.footer-mobile .txt-brand{
+    border-right: 1px solid #000;
+}
+/* media queries  */
+@media screen and (max-width:1300px){
+    .txt-brand{
+        font-size: 2.5em;
+    }
+    .text-links{
+        font-size: 1em;
+    }
+    .hero-text{
+        width: 80%;
+    }
+    .people img{
+        width: 80%;
+    }
+    #payments h4{
+        font-size: 1.5em;
+    }
+    #payments p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:1100px){
+    .txt-links{
+        font-size: 1em;
+    }
+    .hero-text{
+        width: 80%;
+    }
+    section > h3{
+        font-size: 2em;
+    }
+    section > p{
+        font-size: 1.25em;
+    }
+    .offer-item h4{
+        font-size: 1.25em;
+    }
+    .offer-item p{
+        font-size: 1em;
+    }
+    .footer-links a{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:992px){
+    .hero-text{
+        width: 100%;
+    }
+    #payments h4{
+        font-size: 2.063em;
+    }
+    #payments p{
+        font-size: 1.25em;
+    }
+    .bottom-footer p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:768px){
+    .hero-text h2{
+        font-size: 3em;
+    }
+    .hero-text p{
+        font-size: 1.25em;
+    }
+    .hero-buttons .btn{
+        font-size: 1em;
+    }
+    #operations img{
+        width: 40%;
+    }
+    #operations h4{
+        font-size: 1em;
+    }
+    .footer-links a, .bottom-footer p{
+        font-size: .9em;
+    }
+}
+@media screen and (max-width:600px){
+    #hero{
+        height: 55vh;
+    }
+    .hero-buttons{
+        width: 50%;
+    }
+    .hero-text h2{
+        font-size: 1.25em;
+        line-height: 24px;
+    }
+    .hero-text p{
+        font-size: 0.75em;
+        line-height: 15px;
+    }
+}
+@media screen and (max-width:470px){
+    .txt-brand{
+        font-size: 1.875em;
+        line-height: 39px;
+    }
+    .nav-item .btn-primary{
+        padding: 10px;
+    }
+    .hero-text{
+        width: 80%;
+    }
+    .hero-buttons .btn{
+        font-size: .4em;
+        padding: 5px;
+    }
+    .hero-buttons img{
+        width: 30%;
+    }
+    section > h3, 
+    #payments h4, 
+    #payments h5{
+        font-size: 0.813em;
+        line-height: 16px;
+    }
+    section > p, 
+    .offer-item p, 
+    #payments p,
+    #operations h4,
+    #reviews .card-text,
+    .footer-links a{
+        font-size: 0.625em;
+        line-height: 12px;
+    }
+    .offer-item svg{
+        width: 40px;
+    }
+    .offer-item h4{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    #operations img{
+        width: 30%;
+    }
+    #reviews .card-title{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    #reviews .card-subtitle{
+        font-size: 10px;
+        line-height: 37px;
+    }
+    #reviews .card-img-top{
+        width: 25%;
+    }
+    #connect p {
+        width: 80%;
+    }
+    #connect img{
+        width: 30%;
+    }
+    .social-links i{
+        font-size: .9em;
+    }
+    .footer-mobile .txt-brand{
+        font-size: 1.875em;
+        line-height: 39px;
+    }
+    .bottom-footer p{
+        font-size: 8px;
+        line-height: 10px;
+    }
 }
